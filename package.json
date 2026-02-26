@@ -1,0 +1,29 @@
+{
+  "name": "idealab",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "pnpm build:frontend && pnpm build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "pnpm install && cd frontend && npm install && cd ../backend && npm install",
+    "clean": "rm -rf frontend/node_modules backend/node_modules frontend/dist backend/dist",
+    "lint": "cd frontend && npm run lint && cd ../backend && npm run lint",
+    "type-check": "cd backend && npm run type-check"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
