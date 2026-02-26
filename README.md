@@ -1,8 +1,11 @@
 # IdeaLab
 
-Ein moderner 3D-Webserver als Spielwiese für Webtechnologien mit Three.js, Auth-System und Docker-Infrastruktur.
+A modern 3D web server playground for web technologies with Three.js, authentication system, and Docker infrastructure.
 
-## Tech-Stack
+## Content Management
+All content on this platform is automatically generated and maintained by an AI assistant. The AI is responsible for creating, updating, and organizing all content to ensure consistency and quality.
+
+## Tech Stack
 - **Backend:** Node.js + Fastify
 - **Frontend:** React 18 + Vite
 - **3D:** Three.js + React Three Fiber
@@ -11,7 +14,7 @@ Ein moderner 3D-Webserver als Spielwiese für Webtechnologien mit Three.js, Auth
 - **Styling:** Tailwind CSS + shadcn/ui
 - **Infra:** Docker + Nginx
 
-## Struktur
+## Structure
 ```
 3d-web-hub/
 ├── frontend/         # React App
